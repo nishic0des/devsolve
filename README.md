@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# npmPleaserun
+
+## Overview
+
+npmPleaserun is not just another Q&A platform—it's Stack Overflow supercharged! Instead of sifting through endless lines of text-based answers, get direct, engaging, and clear video explanations from experts and fellow developers. Whether you're debugging a tricky error, learning a new framework, or looking for best practices, npmPleaserun provides an immersive and dynamic way to learn.
+
+## Features
+
+- **Video-Powered Answers:** Get your coding questions answered through detailed video explanations.
+- **User Authentication:** Secure sign-ups and logins powered by Appwrite Auth.
+- **Interactive Q&A:** Post questions, share video responses, and engage with the developer community.
+- **Real-Time Collaboration:** Discuss problems and solutions with live updates and responses.
+- **Storage Integration:** Upload and manage video content seamlessly using Appwrite's storage service.
+- **Role-Based Access Control:** Manage permissions for contributors, moderators, and admins.
+
+## Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS, MagicUI, ShadCN
+- **Backend:** Appwrite Cloud Functions, Appwrite Database
+- **Authentication:** Appwrite Auth
+- **Deployment:** Vercel / Netlify
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Before you begin, ensure you have the following installed:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (Latest LTS version)
+- Appwrite instance (Self-hosted or Cloud)
+- Git
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
 
-## Learn More
+   ```sh
+   git clone https://github.com/hiteshchoudhary/npmPleaserun.git
+   cd npmPleaserun
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```sh
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory and add the necessary API keys and Appwrite credentials. Example:
 
-## Deploy on Vercel
+   ```sh
+   VITE_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+   VITE_APPWRITE_PROJECT_ID=your-project-id
+   VITE_APPWRITE_DATABASE_ID=your-database-id
+   VITE_APPWRITE_BUCKET_ID=your-bucket-id
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
+   The app will be available at `http://localhost:3000/`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+npmPleaserun can be deployed using Vercel, Netlify, or any cloud provider supporting Node.js applications. Follow these steps:
+
+1. Create a new project on Vercel/Netlify.
+2. Link the repository and configure environment variables in the dashboard.
+3. Deploy the project with a single click or via the CLI:
+   ```sh
+   vercel --prod
+   ```
+
+## Contribution Guidelines
+
+Want to help build the future of coding Q&A? Follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```sh
+   git checkout -b feature-branch-name
+   ```
+3. Make your changes and commit them:
+   ```sh
+   git commit -m "Add new feature"
+   ```
+4. Push to your forked repository:
+   ```sh
+   git push origin feature-branch-name
+   ```
+5. Create a pull request.
+
+## License
+
+This project can be used for educational purposes.
