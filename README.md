@@ -1,8 +1,8 @@
-# npmPleaserun
+# DevSolve
 
 ## Overview
 
-npmPleaserun is not just another Q&A platform—it's Stack Overflow supercharged! Instead of sifting through endless lines of text-based answers, get direct, engaging, and clear video explanations from experts and fellow developers. Whether you're debugging a tricky error, learning a new framework, or looking for best practices, npmPleaserun provides an immersive and dynamic way to learn.
+DevSolve is not just another Q&A platform—it's Stack Overflow supercharged! Instead of sifting through endless lines of text-based answers, get direct, engaging, and clear video explanations from experts and fellow developers. Whether you're debugging a tricky error, learning a new framework, or looking for best practices, npmPleaserun provides an immersive and dynamic way to learn.
 
 ## Features
 
@@ -15,7 +15,7 @@ npmPleaserun is not just another Q&A platform—it's Stack Overflow supercharged
 
 ## Tech Stack
 
-- **Frontend:** React.js, Tailwind CSS, MagicUI, ShadCN
+- **Frontend:** React, Tailwind CSS, MagicUI, ShadCN
 - **Backend:** Appwrite Cloud Functions, Appwrite Database
 - **Authentication:** Appwrite Auth
 - **Deployment:** Vercel / Netlify
