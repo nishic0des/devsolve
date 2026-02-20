@@ -37,7 +37,7 @@ const VoteButtons = ({
         const response = await databases.listDocuments(db, voteCollection, [
           Query.equal("type", type),
           Query.equal("typeId", id),
-          Query.equal("votedById", user.$id),
+          Query.equal("voteById", user.$id),
         ]);
         setVotedDocument(() => response.documents[0] || null);
       }
@@ -53,7 +53,7 @@ const VoteButtons = ({
       const response = await fetch(`/api/vote`, {
         method: "POST",
         body: JSON.stringify({
-          votedById: user.$id,
+          voteById: user.$id,
           voteStatus: "upvoted",
           type,
           typeId: id,
@@ -80,7 +80,7 @@ const VoteButtons = ({
       const response = await fetch(`/api/vote`, {
         method: "POST",
         body: JSON.stringify({
-          votedById: user.$id,
+          voteById: user.$id,
           voteStatus: "downvoted",
           type,
           typeId: id,
